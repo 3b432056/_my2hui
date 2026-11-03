@@ -1,0 +1,23 @@
+@import './base.css';
+
+/* 強制全域使用最適合古風的經典傳統襯線字型，筆畫帶有優雅的尾端裝飾 */
+*, body, div, span, p, h1, h2, h3, h4, button, input, select, textarea, a {
+  font-family: 'BiauKai', 'DFKai-SB', 'PMingLiU', 'Noto Serif TC', serif !important;
+}
+
+body {
+  background: linear-gradient(to bottom, #fff8e8, #f2e4c2) !important;
+  color: #2c1e16 !important;
+  margin: 0 !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+}
+
+/* 淡入動畫 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
